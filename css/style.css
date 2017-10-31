@@ -1,0 +1,85 @@
+body {
+    background: #282e3a;
+    background-image: url("../images/bg1.jpg");
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50px;
+  padding: 25px;
+
+}
+#countdown{
+  width: 750px;
+  margin: 4% auto;
+}
+#clock span{
+  float: left;
+  text-align: center;
+  font-size: 84px;
+  margin: 0 2.5%;
+  color: #fff;
+  padding: 20px;
+  width: 20%;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+#clock span:nth-child(1){
+  background: #d63337;
+}
+
+#clock span:nth-child(2){
+  background: #09a198;
+}
+
+#clock span:nth-child(3){
+  background: #bb894a;
+}
+
+#clock span:nth-child(4){
+  background: #0c9b4c;
+}
+
+#clock:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#units span{
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 30px;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}
+
+span.turn{
+  animation: turn 0.7s ease backwards;
+}
+
+audio {
+    width: 79.9em;
+    margin-top: 4em;
+
+  }
+
+@keyframes turn{
+  0%{transform: rotateX(0deg)}
+  100%{transform: rotateX(360deg)}
+}
